@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<title>css3鼠标悬停按钮弹出提示信息框特效-xw素材网</title>
+
+		<link href="css/demo.css" rel="stylesheet" type="text/css" media="all" />
+
+		<!--[if LTE IE 8]>
+			<link href="http://formstone.it/css/demo.ie.css" rel="stylesheet" type="text/css" media="all" />
+		<![endif]-->
+
+		<script src="js/demo.js"></script>
+
+		<link href="css/jquery.fs.tipper.css" rel="stylesheet" type="text/css" media="all" />
+		<script src="js/jquery.fs.tipper.js"></script>
+
+		<style>
+			.tipped { background: #999; clear: both; float: none; display: block; margin: 20px auto; width: 50%; }
+			.tipped:hover { background: #777; }
+		</style>
+
+		<script>
+			$(document).ready(function() {
+				$(".tipped").tipper();
+			});
+		</script>
+	</head>
+	<body class="gridlock demo">
+		<article class="row page">
+			<div class="mobile-full tablet-full desktop-8 desktop-push-2">
+
+				<div class="clear_fix">
+					<a href="#" class="button tipped" data-title="Great New Tooltip" data-tipper-options='{"direction":"left"}'>Left</a>
+					<a href="#" class="button tipped" data-title="Great New Tooltip" data-tipper-options='{"direction":"right"}'>Right</a>
+					<a href="#" class="button tipped" data-title="Great New Tooltip" data-tipper-options='{"direction":"top"}'>Top</a>
+					<a href="#" class="button tipped" data-title="Great New Tooltip" data-tipper-options='{"direction":"bottom"}'>Bottom</a>
+				</div>
+
+				<div class="clear_fix">
+					<a href="#" class="button tipped" data-title="Great New Tooltip"  data-tipper-options='{"direction":"left","follow":"true"}'>Left</a>
+					<a href="#" class="button tipped" data-title="Great New Tooltip"  data-tipper-options='{"direction":"right","follow":"true"}'>Right</a>
+					<a href="#" class="button tipped" data-title="Great New Tooltip"  data-tipper-options='{"direction":"top","follow":"true"}'>Top</a>
+					<a href="#" class="button tipped" data-title="Great New Tooltip"  data-tipper-options='{"direction":"bottom","follow":"true"}'>Bottom</a>
+				</div>
+
+				<br />
+
+			</div>
+		</article>
+
+</body>
+</html>
